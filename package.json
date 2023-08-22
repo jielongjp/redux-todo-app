@@ -12,6 +12,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
     "seedrandom": "^3.0.5"
   },
   "scripts": {
@@ -19,9 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -36,6 +35,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "typescript": "^5.1.6"
   }
 }
