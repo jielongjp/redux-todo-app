@@ -1,7 +1,7 @@
 import React from 'react';
-import AddTodoBar from '../molecules/AddTodoBar';
-import TodoFooter from '../molecules/TodoFooter';
-import TodoList from '../molecules/TodoList';
+import AddTodoBar from '../organisms/AddTodoBar';
+import TodoFooter from '../organisms/TodoFooter';
+import TodoList from '../organisms/TodoList';
 
 function TodoMain() {
   return (

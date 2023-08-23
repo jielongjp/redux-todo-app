@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoListItem from '../atoms/TodoListItem';
+import TodoListItem from '../molecules/TodoListItem';
 
 const TodoList = () => {
   const todos = [];

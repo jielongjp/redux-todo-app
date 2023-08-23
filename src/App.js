@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TodoMain from './components/organisms/TodoMain';
+import TodoMain from './components/templates/TodoMain';
 
 const App = () => {
   return (
