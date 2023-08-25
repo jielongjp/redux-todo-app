@@ -13,7 +13,6 @@ export default function filtersReducer(state = initialState, action) {
   switch (action.type) {
     case 'filters/statusFilterChanged': {
       return {
-        // Again, one less level of nesting to copy
         ...state,
         status: action.payload,
       };
@@ -25,7 +24,6 @@ export default function filtersReducer(state = initialState, action) {
       switch (changeType) {
         case 'added': {
           if (colors.includes(color)) {
-            // This color already is set as a filter. Don't change the state.
             return state;
           }
 
@@ -50,3 +48,15 @@ export default function filtersReducer(state = initialState, action) {
       return state;
   }
 }
+
+export const statusFilterChanged = (status) => ({
+  type: 'filters/statusFilterChanged',
+  payload: status,
+});
+
+export const colorFilterChanged = (color, changeType) => {
+  return {
+    type: 'filters/colorFilterChanged',
+    payload: { color, changeType },
+  };
+};
